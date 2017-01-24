@@ -1,0 +1,68 @@
+1. a method that returns the sum of two integers
+
+a) casual
+
+Define a method with two parameters (numbers).
+Add the two numbers together.
+Return the value.
+
+b) formal
+
+START
+
+Define a method with two parameters: number1 and number2.
+Add number1 and number2 together.
+The method automatically returns the last evaluated expression.
+
+END
+
+
+2. a method that takes an array of strings, and returns a string that is all those strings concatenated together
+
+a) casual
+Given a collection of strings.
+(Could just use a method for joining all the elements.)
+Save an empty variable to add to later
+Loop through the collection, adding each element to the variable.
+After the loop return the variable
+
+b) formal
+
+START
+
+# Given a collection of strings called "strings"
+
+SET output = ''
+SET iterator = 0
+
+WHILE iterator < length of strings
+  SET output = output with value of current element at space "iterator" in strings collection
+
+return output (this isn't technically necessary, as the last evaluation returns)
+
+END
+
+
+3. a method that takes an array of integers, and returns a new array with every other element
+
+a) casual
+Given a collection of integers.
+Make a new empty collection.
+Loop through the collection and if the index is even add it to the new collection.
+Return the new collection.
+
+b) formal
+
+START
+
+# Given a collection of integers called "numbers"
+
+SET iterator = 0
+SET output = []
+WHILE iterator < length of numbers
+  IF number at space "iterator" is even
+    Add the number at space "iterator" to the output collection
+
+Return the output.
+
+END
